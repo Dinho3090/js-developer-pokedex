@@ -5,77 +5,226 @@
     padding: 0;
     list-style: none;
 }
+div .type {
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: .25rem;
+}
+h1.logo {
+    margin: 0; /* Remove margens padrão para evitar espaçamento adicional */
+    padding: 0px 0; /* Adiciona espaçamento interno na parte superior e inferior */
+}
 
+/* Estilizando a imagem dentro do h1 */
+h1.logo img {
+    vertical-align: middle; /* Alinha verticalmente a imagem no centro */
+    
+    max-width: 500px; /* Define a largura máxima da imagem */
+    max-height: 150px; /* Define a altura máxima da imagem */
+}
+.content01 {
+     /* Centraliza o conteúdo horizontalmente */
+    margin-top: 0px; /* Espaçamento superior */
+}
+
+/* Estilizando o rótulo (label) */
+label {
+    display: block; /* Transforma os rótulos em blocos para alinhá-los verticalmente */
+    margin-bottom: 10px; /* Espaçamento inferior entre os rótulos e os elementos de entrada */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-top: 10px;
+}
+
+/* Estilizando o campo de seleção (select) */
+select {
+    width: 10%; /* Ocupa a largura total do container */
+    padding: 5px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilizando o campo de entrada de texto (input) */
+input[type="text"] {
+    width: 25%; /* Ocupa a largura total do container */
+    padding: 5px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilizando o botão */
+button {
+    background-color: #6c79db; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 5px 10px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Mostra o cursor de mão ao passar por cima */
+}
+
+/* Estilizando o botão quando hover (passar o mouse por cima) */
+button:hover {
+    background-color: #241963; /* Cor de fundo azul mais escura */
+}
 .normal {
-    background-color: #a6a877;
+    background-color: rgba(166, 168, 119, 0.5); /* Cor de fundo com transparência */
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque ao fundo */
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;  
 }
 
 .grass {
-    background-color: #77c850;
+    background-color: rgba(119, 200, 80, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem; 
 }
 
 .fire {
-    background-color: #ee7f30;
+    background-color: rgba(238, 127, 48, 0.7); 
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem; 
 }
 
 .water {
-    background-color: #678fee;
+    background-color: rgba(103, 143, 238, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem; 
 }
 
 .electric {
-    background-color: #f7cf2e;
+    background-color: rgba(247, 207, 46, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;    
 }
 
 .ice {
-    background-color: #98d5d7;
+    background-color: rgba(152, 213, 215, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .ground {
-    background-color: #dfbf69;
+    background-color: rgba(223, 191, 105, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .flying {
-    background-color: #a98ff0;
+    background-color: rgba(169, 143, 240, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .poison {
-    background-color: #a040a0;
+    background-color: rgba(160, 64, 160, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .fighting {
-    background-color: #bf3029;
+    background-color: rgba(191, 48, 41, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .psychic {
-    background-color: #f65687;
+    background-color: rgba(246, 86, 135, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .dark {
-    background-color: #725847;
+    background-color: rgba(114, 88, 71, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .rock {
-    background-color: #b8a137;
+    background-color: rgba(184, 161, 55, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .bug {
-    background-color: #a8b720;
+    background-color: rgba(168, 183, 32, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .ghost {
-    background-color: #6e5896;
+    background-color: rgba(110, 88, 150, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .steel {
-    background-color: #b9b7cf;
+    background-color: rgba(185, 183, 207, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .dragon {
-    background-color: #6f38f6;
+    background-color: rgba(111, 56, 246, 0.7);
+    backdrop-filter: blur(10px);
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .fairy {
-    background-color: #f9aec7;
+    background-color: rgba(249, 174, 199, 0.7);
+    backdrop-filter: blur(10px); 
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .pokemon {
@@ -84,6 +233,13 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    transform: scale(1);
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+ 
+}
+.pokemon:hover {
+    transform: scale(1.1); /* Aumenta a escala ao passar o mouse */
 }
 
 .pokemon .number {
@@ -95,7 +251,7 @@
 
 .pokemon .name {
     text-transform: capitalize;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: .25rem;
 }
 

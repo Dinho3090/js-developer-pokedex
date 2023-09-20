@@ -20,27 +20,41 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/acordion.css">
+
+    <link rel="shortcut icon" href="/assets/icon/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
+        <h1 class="logo">
+            <img src="/assets/icon/pokemon-logo-0.svg" alt="Logo da Minha Página">
+        </h1>
+        <div class="content01">   
+            <label for="searchType">Buscar por:</label>
+            <select id="searchType">
+                <option value="name">Nome</option>
+                <option value="type">Tipo</option>
+            </select>
+            <label for="searchInput">Nome do Pokémon ou Tipo:</label>
+            <input type="text" id="searchInput" placeholder="Digite o nome ou tipo">
+            <button id="searchButton">Buscar</button>
+        </div>
+
+        <div id="results"></div>
 
         <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
-
+            
+        </ol>   
+        
         <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
+            <button id="loadMoreButton" type="button">Load More</button>
         </div>
+        
     </section>
-
-    <!-- Nosso JS -->
+    <script src="/assets/js/poke-search.js"></script>
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
-
 </html>
